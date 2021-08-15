@@ -1,5 +1,6 @@
 from flask import jsonify, request
 from database.database import Database
+from database.firebase import db_create, db_update, db_read
 
 def index():
     return "index"
@@ -15,7 +16,6 @@ def checkin():
     return jsonify(data)
 
 def test():
-    database = Database()
-    data = database.test()
+    data = db_read("{}".format("users"))
     print(data)
     return jsonify(data)
