@@ -2,6 +2,6 @@
 
 docker-compose -f dev_docker_compose.yml up --build -d
 
-docker exec -it python-backend-api_backend-api_1 bash.
+docker exec -it garfield_backend-api_1 bash
 
-mysql -u test -p -h host --ssl-ca=server-ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem
+mysql -u user -p -h 34.87.154.208 --ssl-ca=server-ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem
