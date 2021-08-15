@@ -30,7 +30,7 @@ steps:
         "--image",
         "gcr.io/ndi-tap-322908/todo:latest",
         "--region",
-        "asia-southeast1-b",
+        "asia-southeast1",
         "--allow-unauthenticated",
         "--platform",
         "managed",
