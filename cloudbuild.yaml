@@ -11,12 +11,12 @@ steps:
       ]
 
     # build & push the container image
-  - name: "gcr.io/cloud-builders/gcloud"
+  - name: "gcr.io/kaniko-project/executor:latest"
     args:
       [
         "--cache=true",
         "--cache-ttl=48h",
-        "--destination=gcr.io/ndi-tap/todo:latest",
+        "--destination=gcr.io/NDI-TAP/todo:latest",
       ]
 
     # Deploy container image to Cloud Run
@@ -28,7 +28,7 @@ steps:
         "deploy",
         "todo",
         "--image",
-        "gcr.io/ndi-tap/todo:latest",
+        "gcr.io/NDI-TAP/todo:latest",
         "--region",
         "asia-southeast1-b",
         "--allow-unauthenticated",
