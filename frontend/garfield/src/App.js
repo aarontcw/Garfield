@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import FormContainer from "./FormContainer";
+import GovYou from "./components/GovYou";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FormContainer />
+        <GovYou />
       </header>
     </div>
   );
