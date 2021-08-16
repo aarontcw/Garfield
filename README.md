@@ -1,13 +1,7 @@
-# backend-api
+# Garfield (Gov + You)
 
-docker-compose -f dev_docker_compose.yml up --build -d
-
-docker exec -it garfield_backend-api_1 bash
-
-mysql -u user -p -h 34.87.154.208 --ssl-ca=server-ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem
-
-# frontend
-
-https://dzone.com/articles/react-apps-firebase
-npm run build
-firebase deploy
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
