@@ -1,10 +1,10 @@
-version: "3.3"  # optional since v1.27.0
+version: "3.3" # optional since v1.27.0
 services:
   backend-api:
     build:
-        context: .
-        dockerfile: dev_dockerfile
+      context: .
+      dockerfile: dev_dockerfile
     ports:
-      - "5001:5001"
+      - "8080:8080"
     volumes:
-        - .:/code
+      - .:/code

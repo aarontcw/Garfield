@@ -7,7 +7,7 @@ steps:
         "activate-service-account",
         "ndi-tap@ndi-tap-322908.iam.gserviceaccount.com",
         "--key-file=./serviceaccount.json",
-        "--project=ndi-tap",
+        "--project=ndi-tap-322908",
       ]
 
     # build & push the container image
@@ -30,7 +30,7 @@ steps:
         "--image",
         "gcr.io/ndi-tap-322908/todo:latest",
         "--region",
-        "asia-southeast1-b",
+        "asia-southeast1",
         "--allow-unauthenticated",
         "--platform",
         "managed",
